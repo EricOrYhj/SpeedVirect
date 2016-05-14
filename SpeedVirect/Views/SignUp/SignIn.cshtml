@@ -1,0 +1,50 @@
+﻿<div id="signin">
+    <div class="container">
+        <div class="text-center logo">
+            <a href="/"><img src="~/Content/Images/logo_vertical.png" alt="Virect" /></a>
+        </div>
+
+        <div class="signin-form">
+            <form method="post">
+                <input type='hidden' name='csrfmiddlewaretoken' value='NrEV4RKUiMrjHsg58bj6OoLQCMQVTH6q' />
+                <div class="form-group">
+                    <!--
+                      <label class="control-label" for="id_username_or_email">Username or Email <span class="required">*</span></label>
+                     -->
+                    <input type="text" name="username_or_email" required class="form-control" autocorrect="off" autocapitalize="none" placeholder="Username or Email" maxlength="250" id="id_username_or_email">
+                </div><!--- .form-group -->
+                <div class="form-group">
+                    <!--
+                      <label class="control-label" for="id_password">Password <span class="required">*</span></label>
+                     -->
+                    <input type="password" name="password" required class="form-control" placeholder="Password" maxlength="128" id="id_password">
+                </div><!--- .form-group -->
+                <div class="help">
+                    <div class="help-remember">
+                        <label class="checkbox">
+                            <input type="checkbox" name="is_rememberme" checked id="id_is_rememberme" class="custom-checkbox">
+                            Remember me
+                        </label>
+                    </div>
+                    <div class="help-forgot-password text-right">
+                        <a href="/password/reset/">Forgot your password?</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input class="btn btn-primary btn-wide" type="submit" value="Sign In" />
+                </div>
+            </form>
+            <div class="text-center">
+                <a href="/signup/">Don't have an account yet? Sign up now »</a>
+            </div>
+            <div class="vertical-divider">OR</div>
+            <div class="text-center">
+                <a href="/connect/vimeo/" class="btn btn-info btn-wide btn-connect-vimeo">
+                    <img src="~/Content/Images/vimeo_icon.png" alt="Vimeo" class="image-responsive" /> Sign in with Vimeo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

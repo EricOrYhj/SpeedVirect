@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>@ViewBag.Title Speed</title>
+
+    <meta property="og:title" content="Video Production Marketplace | Virect" />
+    <meta property="og:description" name="description" content="Virect is a marketplace for video production. Virect makes it easy to find and hire the best video production companies through the portfolio and reviews.">
+    <meta property="og:image" content="~/Content/Images/virect_background.f5684b99d5fc.png" />
+    <meta property="og:video:width" content="1280" />
+    <meta property="og:video:height" content="720" />
+
+    <link rel="stylesheet" type="text/css" href="~/Content/Css/Virect/Common/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Css/Virect/Common/autocomplete.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Css/Virect/Common/flat-ui-pro.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Css/Virect/Common/application.min.css">
+
+
+    <script src="~/Content/Js/Virect/Common/jquery.min.f03e5a3bf534.js"></script>
+    <script src="~/Content/Js/Virect/Common/flat-ui-pro.min.56c5841c0dcf.js"></script>
+
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<body>
+    <div id="header">@{Html.RenderPartial("PageHead");}</div>
+    <div id="container">@RenderBody()</div>
+    <div id="foot">@{Html.RenderPartial("PageFoot");}</div>
+
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)*@
+</body>
+</html>

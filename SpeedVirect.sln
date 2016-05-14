@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedVirect", "SpeedVirect\SpeedVirect.csproj", "{93440F3E-EB8A-4136-A65C-5C805B475AF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{B1DD4E7C-8C2F-481B-82EE-A4E756AD7624}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{735C1298-AC7A-430E-995D-FEA9A4B7BF6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlServer", "SqlServer", "{624068E7-F511-4DF8-8148-8B0D48B2F47C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virect.Entity.Orm", "Virect.Entity.Orm\Virect.Entity.Orm.csproj", "{88A4C8D5-0F49-4A54-B122-1CE982DE9685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virect.DAL.Orm", "Virect.DAL.Orm\Virect.DAL.Orm.csproj", "{14C256BF-D86F-431A-8724-F297EF1BF651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virect.Business.SQL", "Virect.Business.SQL\Virect.Business.SQL.csproj", "{2894F05E-81D0-418D-87ED-5341EE6D6B89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93440F3E-EB8A-4136-A65C-5C805B475AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93440F3E-EB8A-4136-A65C-5C805B475AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93440F3E-EB8A-4136-A65C-5C805B475AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93440F3E-EB8A-4136-A65C-5C805B475AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A4C8D5-0F49-4A54-B122-1CE982DE9685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A4C8D5-0F49-4A54-B122-1CE982DE9685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A4C8D5-0F49-4A54-B122-1CE982DE9685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A4C8D5-0F49-4A54-B122-1CE982DE9685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C256BF-D86F-431A-8724-F297EF1BF651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C256BF-D86F-431A-8724-F297EF1BF651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C256BF-D86F-431A-8724-F297EF1BF651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C256BF-D86F-431A-8724-F297EF1BF651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2894F05E-81D0-418D-87ED-5341EE6D6B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2894F05E-81D0-418D-87ED-5341EE6D6B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2894F05E-81D0-418D-87ED-5341EE6D6B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2894F05E-81D0-418D-87ED-5341EE6D6B89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93440F3E-EB8A-4136-A65C-5C805B475AF2} = {B1DD4E7C-8C2F-481B-82EE-A4E756AD7624}
+		{624068E7-F511-4DF8-8148-8B0D48B2F47C} = {735C1298-AC7A-430E-995D-FEA9A4B7BF6C}
+		{88A4C8D5-0F49-4A54-B122-1CE982DE9685} = {624068E7-F511-4DF8-8148-8B0D48B2F47C}
+		{14C256BF-D86F-431A-8724-F297EF1BF651} = {624068E7-F511-4DF8-8148-8B0D48B2F47C}
+		{2894F05E-81D0-418D-87ED-5341EE6D6B89} = {624068E7-F511-4DF8-8148-8B0D48B2F47C}
+	EndGlobalSection
+EndGlobal

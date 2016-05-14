@@ -1,0 +1,252 @@
+﻿<div id="get-quote-header">
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-lg">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <img src="~/Content/Images/logo_white.c51c4d84a562.png" alt="Virect" />
+                    </div>
+                    <div class="navbar-text phone-number">(800) 500-1713</div>
+                </div>
+            </nav>
+        </div>
+        <div class="cta text-center">
+            <h1 class="page-title">Let's Get Started On Your Video!</h1>
+        </div>
+        <img class="background" src="~/Content/Images/getaquote_header.3e52bb54aefd.jpg" alt="Get quote header" />
+    </div>
+</div>
+<div id="get-quote">
+    <div class="container">
+        <div class="row get-quote-form">
+            <div class="col-md-6 col-md-offset-1">
+                <form action="" method="post" novalidate>
+                    <input type='hidden' name='csrfmiddlewaretoken' value='NrEV4RKUiMrjHsg58bj6OoLQCMQVTH6q' />
+                    <h3>Tell us about your video.</h3>
+                    <div class="form-group">
+                        <!--
+                          <label class="control-label" for="id_project_title">Project title <span class="required">*</span></label>
+                         -->
+                        <input type="text" name="project_title" required class="form-control" placeholder="Give your project a title" id="id_project_title">
+                    </div><!--- .form-group -->
+                    <div class="form-group">
+                        <!--
+                          <label class="control-label" for="id_project_description">Project description <span class="required">*</span></label>
+                         -->
+                        <textarea name="project_description" required class="form-control" cols="40" placeholder="Describe your project" rows="4" id="id_project_description"></textarea>
+                    </div><!--- .form-group -->
+                    <div class="row">
+                        <div class="col-md-12 field_wrapper">
+                            <div class="field-inspiration">
+                                <div class="field-inspiration-field">
+                                    <div class="form-group">
+                                        <input type="text" name="inspirations" class="form-control" placeholder="Any inspirations? (Share URLs of videos you like)" id="id_inspiration">
+                                    </div>
+                                </div>
+                                <div class="btn-add">
+                                    <div class="btn btn-primary add_button">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>What is your budget?</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!--
+                                  <label class="control-label" for="id_budget">Budget <span class="required">*</span></label>
+                                 -->
+                                <select name="budget" required class="form-control select select-primary select-block" id="id_budget">
+                                    <option value="Not selected">Budget</option>
+                                    <option value="$1K - 5K">$1K - 5K</option>
+                                    <option value="$5K - 10K">$5K - 10K</option>
+                                    <option value="$10K - 15K">$10K - 15K</option>
+                                    <option value="Over $15K">Over $15K</option>
+                                    <option value="Specific budget">Specific budget</option>
+                                </select>
+                            </div><!--- .form-group -->
+                        </div>
+                        <div class="col-md-6">
+                            <div id="field-specific-budget" style="display: none;">
+                                <div class="row">
+                                    <div id="select-currency" class="col-xs-2 col-sm-2 col-md-2 currency">
+                                        <div class="form-group">
+                                            <!--
+                                              <label class="control-label" for="id_currency">Currency <span class="required">*</span></label>
+                                             -->
+                                            <select name="currency" required class="form-control select select-primary select-block" id="id_currency">
+                                                <option value="USD" selected="selected">$</option>
+                                                <option value="KRW">₩</option>
+                                            </select>
+                                        </div><!--- .form-group -->
+                                    </div>
+                                    <div class="col-xs-10 col-sm-10 col-md-10 amount">
+                                        <div class="form-group">
+                                            <!--
+                                              <label class="control-label" for="id_specific_budget">Specific budget</label>
+                                             -->
+                                            <input type="text" name="specific_budget" class="form-control" placeholder="Enter amount" id="id_specific_budget">
+                                        </div><!--- .form-group -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="budget-feedback" style="display: none;"></div>
+                        </div>
+                    </div>
+
+                    <h3>When do you need it by?</h3>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button class="btn" type="button"><span class="fui-calendar"></span></button>
+                                    </span>
+                                    <input type="text" name="due_date" class="form-control" placeholder="Select due date" id="id_due_date" value="">
+                                </div>
+                                <input id="due_date" name="due_date" type="hidden" value="" />
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <label class="control-label" for="id_due_date_not_fixed">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="due_date_not_fixed" id="id_due_date_not_fixed">
+                                        I don&#39;t have a set timeline
+                                    </div>
+                                </label>
+                            </div><!--- .form-group -->
+                        </div>
+                    </div>
+
+                    <h3>Enter your contact information.</h3>
+                    <div class="form-group">
+                        <!--
+                          <label class="control-label" for="id_name">Name <span class="required">*</span></label>
+                         -->
+                        <input type="text" name="name" required class="form-control" placeholder="Name" id="id_name">
+                    </div><!--- .form-group -->
+                    <div class="form-group">
+                        <!--
+                          <label class="control-label" for="id_email">Email <span class="required">*</span></label>
+                         -->
+                        <input type="email" name="email" required class="form-control" placeholder="Email" id="id_email">
+                    </div><!--- .form-group -->
+                    <div class="form-group">
+                        <!--
+                          <label class="control-label" for="id_phone">Phone</label>
+                         -->
+                        <input type="text" name="phone" class="form-control" placeholder="Phone" id="id_phone">
+                    </div><!--- .form-group -->
+                    <div class="text-center">
+                        <button id="btn-send" class="btn btn-lg btn-wide btn-primary" type="submit">Get Your Free Quote</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h3>Get in touch.</h3>
+                <p>Thank you for your interest in Virect. Please fill out the contact form and we will get back to you within 24 hours.</p>
+                <br />
+                <h3>Have questions?</h3>
+                <p>Email us anytime at <a href="mailto:help@virect.com">help@virect.com</a>.</p>
+                <br />
+                <h3>Or give us a call.</h3>
+                <p id="phone-number">(800) 500-1713</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/Js/Virect/Order/bootbox.min.8055e87f2396.js"></script>
+<script src="~/Content/Js/Virect/Order/modernizr-custom.f0b9546d4e6c.js"></script>
+<script src="~/Content/Js/Virect/Order/application.ba32d173f788.js"></script>
+
+<script>
+  $(function() {
+    // Settings for budget selector
+    $("select").select2({dropdownCssClass: 'dropdown-inverse'});
+    // Enable checkbox
+    $(':checkbox').radiocheck();
+
+    //var getBudgetFeedback = function(budget) {
+    //  var feedback = {
+    //    "$1K - 5K": gettext("On a budget? Best for individual and smaller videos."),
+    //    "$5K - 10K": gettext("Basic production, a popular choice for startups."),
+    //    "$10K - 15K": gettext("Professional production, a mainstream option for corporations."),
+    //    "Over $15K": gettext("Premium production, preferred choice for brands.")
+    //  }
+    //  return feedback[budget];
+    //}
+    //// Budget feedback init.
+    //var budget = $("#id_budget").val();
+    //if (budget != undefined) {
+    //  if (budget === "Specific budget") {
+    //    $("#field-specific-budget").show();
+    //    $("#id_specific_budget").focus()
+    //  }
+    //  var feedback = getBudgetFeedback(budget);
+    //  if (feedback != undefined) {
+    //    $("#budget-feedback").html(feedback);
+    //    $("#budget-feedback").show();
+    //  }
+    //}
+    // Setting for budget feedback
+    //$("#id_budget").on("change", function (e) {
+    //  $("#field-specific-budget").hide();
+    //  $("#budget-feedback").hide();
+    //  $("#budget-feedback").html("");
+
+    //  if (e.val === "Specific budget") {
+    //    $("#field-specific-budget").show();
+    //    $("#id_specific_budget").focus()
+    //  } else {
+    //    $("#budget-feedback").html(getBudgetFeedback(e.val));
+    //    $("#budget-feedback").show();
+    //  }
+    //});
+    // Settings for datepicker
+    var datepickerSelector = $("#id_due_date");
+    datepickerSelector.datepicker({
+      minDate: new Date(),
+      onSelect: function(dateText) {
+        $("#due_date").val(dateText);
+      }
+    }).prev('.input-group-btn').on('click', function (e) {
+      e && e.preventDefault();
+      datepickerSelector.focus();
+    });
+    $.extend($.datepicker, { _checkOffset: function (inst,offset,isFixed) { return offset; } });
+    // Now let's align datepicker with the prepend button
+    datepickerSelector.datepicker('widget').css({ 'margin-left': -datepickerSelector.prev('.input-group-btn').find('.btn').outerWidth() + 3 });
+  });
+
+  $(document).ready(function(){
+    // Prevent sending request multiple times
+    $("#btn-send").click(function() {
+        $(this).addClass('disabled');
+        $(this).html("Sending");
+    });
+
+    // Settings for inspirations fields
+    var maxField = 10; //Input fields increment limitation
+    var addButton = $('.add_button'); //Add button selector
+    var wrapper = $('.field_wrapper'); //Input field wrapper
+    // var fieldHTML = '<div><input type="text" name="field_name[]" value=""/><a href="javascript:void(0);" class="remove_button" title="Remove field"><img src="remove-icon.png"/></a></div>'; //New input field html
+    var newField = '<div class="field-inspiration"><div class="field-inspiration-field"><div class="form-group"><input type="text" name="inspirations" class="form-control" placeholder="Any Inspirations? (Share URLs of videos you like)" id="id_inspiration"></div></div><div class="btn-remove"><div class="btn btn-danger remove_button">-</div></div></div>'; //New input field html
+    var x = 1; //Initial field counter is 1
+    $(addButton).click(function(){ //Once add button is clicked
+      console.log("add button clicked");
+      if(x < maxField){ //Check maximum number of input fields
+        x++; //Increment field counter
+        $(wrapper).append(newField); // Add field html
+      }
+    });
+    $(wrapper).on('click', '.remove_button', function(e){ //Once remove button is clicked
+      console.log("remove button clicked");
+      e.preventDefault();
+      $(this).parents('.field-inspiration').remove(); //Remove field html
+      x--; //Decrement field counter
+    });
+  });
+</script>
