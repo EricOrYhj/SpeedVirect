@@ -135,7 +135,6 @@ F:\SpeedVirect\SpeedVirect\bin\SpeedVirect.pdb
 F:\SpeedVirect\SpeedVirect\bin\Antlr3.Runtime.dll
 F:\SpeedVirect\SpeedVirect\bin\EntityFramework.dll
 F:\SpeedVirect\SpeedVirect\bin\EntityFramework.SqlServer.dll
-F:\SpeedVirect\SpeedVirect\bin\Microsoft.AI.Agent.Intercept.dll
 F:\SpeedVirect\SpeedVirect\bin\Microsoft.AI.DependencyCollector.dll
 F:\SpeedVirect\SpeedVirect\bin\Microsoft.AI.PerfCounterCollector.dll
 F:\SpeedVirect\SpeedVirect\bin\Microsoft.AI.ServerTelemetryChannel.dll
@@ -226,13 +225,6 @@ F:\SpeedVirect\SpeedVirect\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
 F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
 F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
 F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.Owin.resources.dll
-F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
-F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
-F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
-F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
-F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
-F:\SpeedVirect\SpeedVirect\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 F:\SpeedVirect\SpeedVirect\obj\Debug\SpeedVirect.csprojResolveAssemblyReference.cache
 F:\SpeedVirect\SpeedVirect\obj\Debug\SpeedVirect.dll
 F:\SpeedVirect\SpeedVirect\obj\Debug\SpeedVirect.pdb
